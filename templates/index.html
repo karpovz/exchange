@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyExChenge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleSelect.css') }}">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar2">
+            <a href="#" class="navbarMenu2"><img src="{{ url_for('static', filename='img/menu.svg') }}" alt="menu"></a>
+            <a href="#" class="navbarLogo__link">
+                <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="LOGO" class="navbarLogo__img">
+            </a>
+            <a href="#" class="navbarSign2"><img src="{{ url_for('static', filename='img/sign-in.svg') }}" alt="sign" class="navbarSign2"></a>
+        </nav>
+        <div class="menu">
+            <a class="menuItm">Компания</a>
+            <a class="menuItm">Блог</a>
+            <a class="menuItm">Контакты</a>
+        </div>
+        <!-- navbar -->
+    </div>
+    <div class="main">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="navbarMenu2"><img src="{{ url_for('static', filename='img/menu.svg') }}" alt="menu"></a>
+                <a href="#" class="navbarLogo__link">
+                    <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="LOGO" class="navbarLogo__img">
+                </a>
+                <div class="navbarMenu">
+                    <a href="#" class="navbarMenu__itm">Компания</a>
+                    <a href="#" class="navbarMenu__itm">Блог</a>
+                    <a href="#" class="navbarMenu__itm">Контакты</a>
+                </div>
+                <div class="navbarSign">
+                    <a href="#" class="navbarSignIn">Вход</a>
+                    <a href="#" class="navbarSignUp"><p>Регистрация</p></a>
+                </div>
+                <a href="#" class="navbarSign2"><img src="{{ url_for('static', filename='img/sign-in.svg') }}" alt="sign" class="navbarSign2"></a>
+            </nav>
+            <!-- navbar -->
+        </div>
+        <!-- container -->
+        <div class="container__fluid">
+            <header class="header">
+                <div class="container">
+                    <img id="headerImg__1" src="{{ url_for('static', filename='img/imgHeader-1.png') }}" alt="img1" class="headerImg">
+                    <img id="headerImg__2" src="{{ url_for('static', filename='img/imgHeader-2.png') }}" alt="img2" class="headerImg">
+                    <img id="headerImg__3" src="{{ url_for('static', filename='img/imgHeader-3.png') }}" alt="img3" class="headerImg">  
+                    <img id="headerImg__4" src="{{ url_for('static', filename='img/imgHeader-4.png') }}" alt="img4" class="headerImg">
+                    <h1 class="headerTitle">Мультивалютный обменный&#160сервис&#160 24/7</h1>
+                    <h2 class="headerSubtitle">Быстрый обмен без скрытых комиссий</h2>
+                    <div class="headerPreview">
+                        <div class="headerPreviewBlock__1">
+                            <div class="headerPreviewBlock__1Content">
+                                <div class="headerPreviewBlock__1ContentPutMoney">
+                                    <div class="title">Вы отдаете</div>
+                                    <div class="sumMoney">
+                                        <div class="sumMoneyTitle">Сумма</div>
+                                        <div class="money">
+                                            <input id="getInputMoney" class="inputMoney" type="text" value="1000.00" placeholder="00.00"> 
+                                            <div id="GetMoney" class="chengePurse"></div>
+                                        </div>
+                                        <!-- money -->
+                                    </div>
+                                    <!-- sumMoney -->
+                                </div>
+                                <!-- headerPreviewBlock__1ContentPutMoney -->
+                                <a  class="headerPreviewBlock__1ContentOr" href="#"><img src="{{ url_for('static', filename='img/or.svg') }}" alt="change"></a>
+                                <div class="headerPreviewBlock__1ContentGetMoney">
+                                    <div class="title">Вы получаете<span>c учетом комиссии ПС (0.5%)</span></div>
+                                    <div class="sumMoney">
+                                        <div class="sumMoneyTitle">Сумма</div>
+                                        <div class="money">
+                                            <input class="inputMoney" type="text" value="970.00" placeholder="00.00"> 
+                                            <div id="PutMoney" class="chengePurse"></div>
+                                        </div>
+                                        <!-- money -->
+                                    </div>
+                                    <!-- sumMoney -->
+                                </div>
+                                <!-- headerPreviewBlock__1ContentGetMoney -->
+                                <a href="#" class="headerPreviewBlock__1ContentChangeBtn">
+                                    <span>Обменять</span>
+                                </a>
+                            </div>
+                            <!-- headerPreviewBlock__1Content -->
+                        </div>
+                        <!-- headerPreviewBlock__1 -->
+                        <div class="headerPreviewBlock__2"></div>
+                        <div class="headerPreviewBlock__3"></div>
+                    </div>
+                    <!-- headerPreview -->
+                </div>
+                <!-- container -->
+            </header>
+            <!-- header -->
+        </div>
+        <!-- container__fluid -->
+        <div class="container">
+            <div class="feature">
+                <div class="featureItem">
+                    <img src="{{ url_for('static', filename='img/security.png') }}" alt="security" class="featureItemImg">
+                    <h3 class="featureItemTitle">Безопасность</h3>
+                    <div class="featureItemText security">Усиленная безопасность ваших обменов, усиленная безопасность от мошенников!</div>
+                </div>
+                <div class="featureItem">
+                    <img src="{{ url_for('static', filename='img/ref.png') }}" alt="ref" class="featureItemImg">
+                    <h3 class="featureItemTitle">Реферальная система</h3>
+                    <div class="featureItemText ref">На сервисе работает партнерская программа , за каждый обмен приведенного вами клиента, вы получаете 0.5% с нашей прибыли.</div>
+                </div>
+                <div class="featureItem">
+                    <img src="{{ url_for('static', filename='img/support.png') }}" alt="support" class="featureItemImg">
+                    <h3 class="featureItemTitle">Онлайн поддержка</h3>
+                    <div class="featureItemText support">Четыре вида поддержки для наших клиентов:  Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).</div>
+                </div>
+            </div>
+            <!-- feature -->
+        </div>
+        <!-- container -->
+        <div class="container">
+            <div class="history">
+                <div class="historyContent">
+                    <h2 class="historyContentTitle">Сервис обмена электронных валют с 5-летней историей</h2>
+                    <div class="historyContentText">За время работы мы приобрели репутацию проверенного партнера и делаем все возможное, чтобы ваши впечатления от нашего сервиса были только благоприятными.</div>
+                </div>
+                <div class="historyImg">
+                    <img src="{{ url_for('static', filename='img/history.png') }}" class="historyImgItms itm1">
+                    <img src="{{ url_for('static', filename='img/history-1.png') }}" class="historyImgItms itm2">
+                    <img src="{{ url_for('static', filename='img/history-2.png') }}" class="historyImgItms itm3">
+                    <img src="{{ url_for('static', filename='img/history-3.png') }}" class="historyImgItms itm4">
+                </div>
+            </div>
+            <!-- history -->
+        </div>
+        <!-- container -->
+        <div class="container">
+            <div class="reserve">
+                <div class="reserveTitle">Резерв валюты</div>
+                <div class="reserveContent">
+                    <div class="reserveContentBlock block1">
+                        <div class="reserveContentBlockItm">
+                            <img src="{{ url_for('static', filename='img/reserveYandex.svg') }}" alt="Yandex" class="reserveContentBlockItmImg">
+                            <div class="reserveContentBlockItmText">
+                                <div class="reserveContentBlockItmTextTitle">Yandex RUB</div>
+                                <div class="reserveContentBlockItmTextNum">90500</div>
+                            </div>
+                        </div>
+                        <div class="reserveContentBlockItm">
+                            <img src="{{ url_for('static', filename='img/reservePrivat.svg') }}" alt="Privat" class="reserveContentBlockItmImg">
+                            <div class="reserveContentBlockItmText">
+                                <div class="reserveContentBlockItmTextTitle">Yandex RUB</div>
+                                <div class="reserveContentBlockItmTextNum">90500</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- reserveContentBlock -->
+                    <div class="reserveContentBlock block2">
+                        <div class="reserveContentBlockItm">
+                            <img src="{{ url_for('static', filename='img/reserveEthereum.svg') }}" alt="Ethereum" class="reserveContentBlockItmImg">
+                            <div class="reserveContentBlockItmText">
+                                <div class="reserveContentBlockItmTextTitle">Yandex RUB</div>
+                                <div class="reserveContentBlockItmTextNum">90500</div>
+                            </div>
+                        </div>
+                        <div class="reserveContentBlockItm">
+                            <img src="{{ url_for('static', filename='img/reservePayPal.svg') }}" alt="PayPal" class="reserveContentBlockItmImg">
+                            <div class="reserveContentBlockItmText">
+                                <div class="reserveContentBlockItmTextTitle">Yandex RUB</div>
+                                <div class="reserveContentBlockItmTextNum">90500</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- reserveContentBlock -->
+                    <div class="reserveContentBlock block3">
+                        <div class="reserveContentBlockItm">
+                            <img src="{{ url_for('static', filename='img/reserveBitcoin.svg') }}" alt="Bitcoin" class="reserveContentBlockItmImg">
+                            <div class="reserveContentBlockItmText">
+                                <div class="reserveContentBlockItmTextTitle">Yandex RUB</div>
+                                <div class="reserveContentBlockItmTextNum">90500</div>
+                            </div>
+                        </div>
+                        <div class="reserveContentBlockItm">
+                            <img src="{{ url_for('static', filename='img/reservePM.svg') }}" alt="PM" class="reserveContentBlockItmImg">
+                            <div class="reserveContentBlockItmText">
+                                <div class="reserveContentBlockItmTextTitle">Yandex RUB</div>
+                                <div class="reserveContentBlockItmTextNum">90500</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- reserveContentBlock -->
+                    <div class="reserveContentBlock block4">
+                        <div class="reserveContentBlockItm">
+                            <img src="{{ url_for('static', filename='img/reserveSber.svg') }}" alt="Sber" class="reserveContentBlockItmImg">
+                            <div class="reserveContentBlockItmText">
+                                <div class="reserveContentBlockItmTextTitle">Yandex RUB</div>
+                                <div class="reserveContentBlockItmTextNum">90500</div>
+                            </div>
+                        </div>
+                        <div class="reserveContentBlockItm">
+                            <img src="{{ url_for('static', filename='img/reserveQiwi.svg') }}" alt="Qiwi" class="reserveContentBlockItmImg">
+                            <div class="reserveContentBlockItmText">
+                                <div class="reserveContentBlockItmTextTitle">Yandex RUB</div>
+                                <div class="reserveContentBlockItmTextNum">90500</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- reserveContentBlock -->
+                </div>
+                <!-- reserveContent -->
+            </div>
+            <!-- reserve -->
+        </div>
+        <!-- container -->
+        <div class="container">
+            <div class="reviews">
+                <div class="reviewsTitle">Что клиенты говорят о нас</div>
+                <div class="reviewsSlider">
+                    <div class="sliderList">
+                        <div class="sliderListTrack">
+                            <div class="sliderListTrack__item">
+                                <img src="{{ url_for('static', filename='img/slider.png') }}" class="sliderListTrack__itemDiscriptionImg">
+                                <div class="sliderListTrack__itemText">Киви переправил деньги не на кошелек а на номер мтс будьте внимательны.даже в этом случаи делают возврат и переводят на приват.особая благодарность оператору Марии.</div>
+                                <div class="sliderListTrack__itemDiscription">
+                                    <div class="sliderListTrack__itemDiscriptionName">Валерий</div>
+                                    <div class="sliderListTrack__itemDiscriptionDate">20.12.2017, 13:11</div>
+                                </div>
+                            </div>
+                            <div class="sliderListTrack__item">
+                                <img src="{{ url_for('static', filename='img/slider.png') }}" class="sliderListTrack__itemDiscriptionImg">
+                                <div class="sliderListTrack__itemText">3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!</div>
+                                <div class="sliderListTrack__itemDiscription">
+                                    <div class="sliderListTrack__itemDiscriptionName">Александр</div>
+                                    <div class="sliderListTrack__itemDiscriptionDate">19.02.2020, 16:07</div>
+                                </div>
+                            </div>
+                            <div class="sliderListTrack__item">
+                                <img src="{{ url_for('static', filename='img/slider.png') }}" class="sliderListTrack__itemDiscriptionImg">
+                                <div class="sliderListTrack__itemText">Прекрасный сервис, множество разных вариантов обменников представлено на сайте. Есть возможность выбрать не только более выгодный курс обмена, но и режим обмена электронных валют. Обмен может быть автоматическим или осуществляется в ручном режиме.</div>
+                                <div class="sliderListTrack__itemDiscription">
+                                    <div class="sliderListTrack__itemDiscriptionName">Мария</div>
+                                    <div class="sliderListTrack__itemDiscriptionDate">10.09.2018, 13:11</div>
+                                </div>
+                            </div>
+                            <div class="sliderListTrack__item">
+                                <img src="{{ url_for('static', filename='img/slider.png') }}" class="sliderListTrack__itemDiscriptionImg">
+                                <div class="sliderListTrack__itemText">3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!</div>
+                                <div class="sliderListTrack__itemDiscription">
+                                    <div class="sliderListTrack__itemDiscriptionName">Виктор</div>
+                                    <div class="sliderListTrack__itemDiscriptionDate">03.07.2019, 16:07</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sliderListTrack -->
+                    </div>
+                    <!-- sliderList -->
+                    <div class="sliderControl">
+                        <div class="sliderControlArrows">
+                            <div class="sliderControlArrowsPrev disabled">
+                                <svg width="36" height="16" viewBox="0 0 36 16" xmlns="https://www.w3.org/2000/svg">
+                                <path d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538405 7.04738 0.538405 6.65686 0.92893L0.292893 7.29289ZM36 7L1 7L1 9L36 9L36 7Z"/>
+                                </svg>
+                            </div>
+                            <div class="sliderControlArrowsNext">
+                                <svg width="36" height="16" viewBox="0 0 36 16" xmlns="https://www.w3.org/2000/svg">
+                                <path d="M35.7071 8.70711C36.0976 8.31658 36.0976 7.68342 35.7071 7.29289L29.3431 0.928932C28.9526 0.538408 28.3195 0.538408 27.9289 0.928932C27.5384 1.31946 27.5384 1.95262 27.9289 2.34315L33.5858 8L27.9289 13.6569C27.5384 14.0474 27.5384 14.6805 27.9289 15.0711C28.3195 15.4616 28.9526 15.4616 29.3431 15.0711L35.7071 8.70711ZM0 9H35V7H0V9Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- sliderControlArrows -->
+                    </div>
+                    <!-- sliderControl -->
+                </div>
+                <!-- reviewsSlider -->
+            </div>
+            <!-- reviews -->
+        </div>
+        <!-- container -->
+        <div class="container">
+            <div class="start">
+                <img src="{{ url_for('static', filename='img/Start.png') }}" alt="start" class="startImg">
+                <div class="startContent">
+                    <h2 class="startContentTitle">Будем рады предоставить Вам качественный обмен валют на нашем сервисе!</h2>
+                    <div class="startContentDesctiption">Начните обмен прямо сейчас</div>
+                    <a href="#" class="startContentBtn"><span>Начать обмен</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <div class="container">
+            <footer class="footer">
+                <img src="{{ url_for('static', filename='img/logo.svg') }}" class="footerLogo">
+                <div class="footerMenu">
+                    <a href="#" class="footerMenuItm">Карта сайта</a>
+                    <a href="#" class="footerMenuItm">Предупреждение</a>
+                    <a href="#" class="footerMenuItm">Правила сайта</a>
+                    <a href="#" class="footerMenuItm">Обмен</a>
+                </div>
+                <div class="footerSocial">
+                    <a href="#" class="footerSocialItm"><img src="{{ url_for('static', filename='img/vk.png') }}" alt="vk.com"></a>
+                    <a href="#" class="footerSocialItm"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="facebook.com"></a>
+                    <a href="#" class="footerSocialItm"><img src="{{ url_for('static', filename='img/instagram.png') }}" alt="instagram.com"></a>
+                </div>
+            </footer>
+        </div>
+        <!-- container -->
+    </div>
+    <!-- main -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script/select.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script/load.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script/slider.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script/menu.js') }}" ></script>
+</body>
+</html>
